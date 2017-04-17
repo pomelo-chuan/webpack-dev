@@ -1,1 +1,1 @@
-module.exports = 'It is OK!'
+module.exports = '环境变量为：' + REQUEST_PATH;
