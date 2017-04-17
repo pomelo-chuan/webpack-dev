@@ -4,8 +4,8 @@
   "description": "",
   "main": "entry.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --config webpack.config.js",
-    "start": "node server.js",
+    "dev": "NODE_ENV=development ENVIRONMENT=test webpack-dev-server --inline --hot --config webpack.config.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "npm run deploy",
     "deploy": "webpack -p"
