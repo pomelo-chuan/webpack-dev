@@ -4,9 +4,9 @@
   "description": "",
   "main": "entry.js",
   "scripts": {
-    "dev": "NODE_ENV=development ENVIRONMENT=dev webpack-dev-server --inline --hot --config webpack.config.js",
-    "start": "NODE_ENV=production node server.js",
+    "dev": "ENVIRONMENT=dev webpack-dev-server --inline --hot --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "prestart": "npm run deploy",
     "deploy": "webpack -p"
   },
@@ -23,6 +23,7 @@
     "webpack": "^1.14.0"
   },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "^1.12.0"
   }
