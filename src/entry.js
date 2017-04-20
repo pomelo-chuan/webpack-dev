@@ -1,6 +1,10 @@
-require("./style.css");
-require("./style2.css");
+import configs from './config.js';
+import zhihuModule from './components/zhihu';
+require('./style.css');
 
-document.write(require('./module.js'));
+const myApp = angular.module('myApp', [
+    'ui.router',
+    zhihuModule
+]);
 
-console.log("环境变量REQUEST_PATH:", REQUEST_PATH)
+myApp.config(configs);

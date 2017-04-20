@@ -1,1 +1,0 @@
-module.exports = '环境变量为：' + REQUEST_PATH;
