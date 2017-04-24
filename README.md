@@ -17,3 +17,6 @@ ENVIRONMENT=dev npm start
 ```bash
 npm run dev
 ```
+
+ 测试参考文档
+http://stackoverflow.com/questions/33915575/babel-karma-babel-preprocessor-not-converting-es6-es5-for-karma-tests

@@ -1,7 +1,8 @@
 function newsController($scope) {
     var vm = this;
+    $scope.count = 0;
     vm.add = function () {
-        alert(1)
+       $scope.count++
     }
 }
 
