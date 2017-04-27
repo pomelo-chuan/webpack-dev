@@ -7,4 +7,6 @@ const app = express();
 console.log(app.get('env'));
 
 app.use(express.static(join(__dirname, 'dist')));
-app.listen(constants.PORT, () => console.log('Listen on：' + constants.PORT));
+app.listen(constants.PORT, function () {
+    console.log('Listen on：' + constants.PORT);
+});
