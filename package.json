@@ -8,7 +8,8 @@
     "test": "",
     "start": "NODE_ENV=production  node server.js",
     "prestart": "npm run deploy",
-    "deploy": "NODE_ENV=production webpack"
+    "deploy": "NODE_ENV=production webpack",
+    "flow": "flow"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +35,9 @@
     "webpack": "^1.14.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.45.0",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "^1.12.0"
   }
