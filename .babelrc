@@ -6,6 +6,7 @@
     "flow"
   ],
   "plugins": [
-    "transform-runtime"
+    "transform-runtime",
+    "transform-flow-strip-types"
   ]
 }
