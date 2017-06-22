@@ -1,18 +1,18 @@
-// @flow
-function newsController($scope: any) {
-    var vm = this;
-    $scope.count = 0;
-    vm.add = function () {
-        $scope.count++;
+import axios from 'axios'
+import { fetchNewsLatest } from '../../../service/services';
+
+export default class newsController {
+    $log;
+    constructor($log) {
+        this.$log = $log;
     }
 
-    function square(n: number): number {
-        return n * n;
+    async _fetch() {
+        let result = await fetchNewsLatest();
+        this.$log.info(result.data);
     }
-    
-    square("2");
-    
-    square(1);
+
+    get() {
+        this._fetch();
+    }
 }
-
-export default newsController;
